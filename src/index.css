@@ -1,0 +1,5 @@
+@import "./styles/globals.css";
+
+.text-2xl {
+    font-size: var(--font-size-6xl);
+}

@@ -1,0 +1,93 @@
+/* -----------------------------------
+   🎨 Design Tokens for Ecommerce App
+-------------------------------------- */
+
+:root {
+    /* Brand colors */
+    --color-primary: #00B207;
+    --color-primary-dark: #2C742F;
+    --color-primary-light: #84D187;
+
+    --color-primary-hover: #2C742F;
+    --color-primary-active: #00B207;
+
+    --color-warning: #FF8A00;
+    --color-danger: #EA4B48;
+    --color-success: #00FF00;
+
+    /* Grays */
+    --color-gray-100: #f1f1f1;
+    --color-gray-200: #d4d4d4;
+    --color-gray-300: #b8b8b8;
+    --color-gray-400: #9c9c9c;
+    --color-gray-500: #808080;
+    --color-gray-600: #636363;
+    --color-gray-700: #474747;
+    --color-gray-800: #2a2a2a;
+    --color-gray-900: #0e0e0e;
+
+    /* Green shades */
+    --color-green-100: #edf4ee;
+    --color-green-200: #cadfcb;
+    --color-green-300: #a6caa8;
+    --color-green-400: #83b585;
+    --color-green-500: #5fa062;
+    --color-green-600: #4a7c4d;
+    --color-green-700: #355937;
+    --color-green-800: #203521;
+    --color-green-900: #0b120b;
+
+    /* Borders / lines */
+    --color-border: #e1e1e1;
+
+    /* Font */
+    --font-base: "Poppins", sans-serif;
+
+    /* Font Weight */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    /* Font Size */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 30px;
+    --font-size-4xl: 36px;
+    --font-size-5xl: 48px;
+    --font-size-6xl: 60px;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.18);
+
+    --color-bg: #fff;
+    --color-text-white: #fff;
+    --color-text-black: #000;
+    --color-text-gray: #636363;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #636363;
+
+    /* Breakpoints */
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+}

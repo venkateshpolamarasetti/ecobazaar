@@ -1,0 +1,53 @@
+.add-to-cart, .add-to-wishlist, .big-close, .right-arrow, .facebook, .instagram, .twitter, .pinterest, .link, .visibility-icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Default */
+.add-to-cart.default, .add-to-wishlist.default, .big-close.default, .right-arrow.default, .facebook.default, .instagram.default, .twitter.default, .pinterest.default, .link.default, .visibility-icon.default {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Default Hover */
+.big-close.default:hover {
+    background-color: var(--color-primary-active);
+}
+
+.big-close.default:hover img{
+    filter: brightness(0) invert(1);
+}
+.right-arrow.default:hover {
+    background-color: var(--color-primary-active);
+}
+
+.right-arrow.default:hover img{
+    filter: brightness(0) invert(1);
+}
+
+/* Active */
+.add-to-cart.active, .facebook.active, .instagram.active, .twitter.active, .pinterest.active, .link.active, .visibility-icon.active {
+    background-color: var(--color-primary-active);
+}
+.add-to-cart.active:hover, .facebook.active:hover, .instagram.active:hover, .twitter.active:hover, .pinterest.active:hover, .link.active:hover, .visibility-icon.active:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Add To Wishlist */
+.add-to-wishlist.active {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.add-to-wishlist.active:hover {
+    background-color: var(--color-primary-active);
+}
+.add-to-wishlist.active:hover img {
+    filter: brightness(0) invert(1);
+}

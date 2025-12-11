@@ -1,0 +1,71 @@
+.radio-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+/* Hide the native radio */
+.radio-label input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+.radio-label:hover .radio-custom {
+    border-color: var(--color-primary);
+}
+
+/* Inner dot when checked */
+.radio-label input[type="radio"]:checked + .radio-custom {
+    border-color: var(--color-primary);
+}
+
+.radio-label input[type="radio"]:checked + .radio-custom::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+/* Label text color when checked */
+.radio-label input[type="radio"]:checked ~ .radio-label-text {
+    color: var(--color-primary);
+}
+
+.radio-label-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.radio-label:hover {
+    opacity: 0.8;
+}
+
+.radio-label:active {
+    opacity: 0.6;
+}
+
+.radio-label input[type="radio"]:disabled ~ .radio-custom {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.radio-label input[type="radio"]:disabled ~ .radio-label-text {
+    opacity: 0.4;
+    cursor: not-allowed;
+}

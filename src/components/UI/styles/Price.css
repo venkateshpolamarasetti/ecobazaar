@@ -1,0 +1,50 @@
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+}
+
+.price, .price.text-base {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-black);
+}
+
+.discounted-price, .discounted-price.text-base {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-gray-400);
+    text-decoration: line-through;
+}
+
+.price.text-sm {
+    font-size: var(--font-size-sm);
+}
+
+.price.text-md {
+    font-size: var(--font-size-md);
+}
+
+.price.text-lg {
+    font-size: var(--font-size-lg);
+}
+
+.price.text-xl {
+    font-size: var(--font-size-xl);
+}
+.discounted-price.text-sm {
+    font-size: var(--font-size-sm);
+}
+
+.discounted-price.text-md {
+    font-size: var(--font-size-md);
+}
+
+.discounted-price.text-lg {
+    font-size: var(--font-size-lg);
+}
+
+.discounted-price.text-xl {
+    font-size: var(--font-size-xl);
+}
