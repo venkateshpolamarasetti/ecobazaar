@@ -1,53 +1,62 @@
 .checkbox {
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--color-gray-300);
-    border-radius: 4px;
-    background-color: var(--color-white);
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    transition: all 0.2s ease;
-    position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 /* Default Variant */
 .checkbox.default {
-    border-color: var(--color-gray-600);
-    box-shadow: inset 0 0 0 1px var(--color-gray-600);
+  border-color: var(--color-gray-600);
+  box-shadow: inset 0 0 0 1px var(--color-gray-600);
 }
 
 .checkbox.default:hover {
-    border-color: var(--color-primary);
-    box-shadow: inset 0 0 0 1px var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
 }
 
 /* Active (checked) */
-.checkbox.active:checked, .checkbox.default:checked {
-    border-color: var(--color-primary);
-    background-color: var(--color-primary);
+.checkbox.active:checked,
+.checkbox.default:checked {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 /* Disabled */
 .checkbox.disabled {
-    border-color: var(--color-gray-300);
-    background-color: var(--color-gray-100);
-    cursor: not-allowed;
+  border-color: var(--color-gray-300);
+  background-color: var(--color-gray-100);
+  cursor: not-allowed;
 }
 
 /* none variant */
 .checkbox.none {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /* custom checkmark */
 .checkbox:checked::after {
-    content: "✔";
-    color: var(--color-white);
-    font-size: 14px;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -58%);
+  content: "✔";
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+}
+
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
 }
