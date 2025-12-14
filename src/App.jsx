@@ -1,13 +1,17 @@
-import React from 'react'
-import Price from './components/UI/Price'
-import ActionIcon from './components/UI/ActionIcon'
+import React from "react";
+import LoginPage from "./forms/LoginPage";
+import SignUpPage from "./forms/SignUpPage";
+import SearchBar from "./components/UI/SearchBar";
+import Newsletter from "./components/UI/Newsletter";
 
 const App = () => {
   return (
-    <div>
-      
+    <div className="container">
+      <SearchBar />
+      <Newsletter />
+      <LoginPage />
+      <SignUpPage />
     </div>
-  )
-}
-
-export default App
+  );
+};
+export default App;

@@ -6,25 +6,25 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Allow percentage-based heights */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 /* Smooth text rendering */
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Improve media defaults */
@@ -33,8 +33,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* Remove built-in form typography styles */
@@ -42,9 +42,9 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
-    outline: none;
-    border: none;
+  font: inherit;
+  outline: none;
+  border: none;
 }
 
 /* Prevent text overflow */
@@ -55,33 +55,33 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Links reset */
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Remove list styles */
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 /* Buttons reset */
 button {
-    cursor: pointer;
-    background: none;
+  cursor: pointer;
+  background: none;
 }
 
 /* Scrollbar removal (optional) */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #c3c3c3;
-    border-radius: 4px;
+  background: #c3c3c3;
+  border-radius: 4px;
 }

@@ -1,0 +1,76 @@
+.form-container {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: var(--spacing-lg);
+  margin-block: 1rem;
+  border: 1px solid var(--color-gray-400);
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+}
+
+.form-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.form-helper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.register {
+  justify-content: center;
+  gap: 8px;
+}
+
+.register a {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.forget-password,
+.register {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+
+.row-layout {
+  flex-direction: row;
+  align-items: flex-start; /* Align input and button tops */
+  gap: 0; /* No gap for connected look, or small gap */
+  width: 100%;
+  max-width: none; /* remove default width constraints if needed */
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  margin-block: 1rem;
+}
+
+.row-layout .form-control input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none; /* Merge with button */
+  height: 48px; /* Force height match */
+  white-space: nowrap; /* required */
+  overflow: hidden; /* required */
+  text-overflow: ellipsis; /* required */
+}
+
+/* Adjust the button in row layout */
+.row-layout button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 48px; /* Force height match */
+  padding: 0 24px;
+}
