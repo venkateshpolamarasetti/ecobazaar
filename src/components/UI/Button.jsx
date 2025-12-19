@@ -14,6 +14,7 @@ const Button = ({
     primary: "btn-primary",
     outline: "btn-outline",
     disabled: "btn-disabled",
+    default: "btn-default",
   };
   const sizes = {
     small: "btn-small",
@@ -30,7 +31,11 @@ const Button = ({
       type={type}
     >
       {label}
-      {logo && <div className="btn-logo">{logo}</div>}
+      {logo && (
+        <div className="btn-logo">
+          <img src={logo} alt={label} />
+        </div>
+      )}
     </button>
   );
 };

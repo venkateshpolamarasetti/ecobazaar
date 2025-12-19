@@ -57,6 +57,15 @@
   stroke: var(--color-primary-dark);
 }
 
+.btn-default {
+  background-color: var(--color-green-100);
+  color: var(--color-text-black);
+}
+
+.btn-default:hover {
+  background-color: var(--color-green-100);
+}
+
 .btn-small {
   padding: 10px 24px;
   font-size: var(--font-size-xs);

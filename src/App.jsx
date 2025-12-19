@@ -1,16 +1,24 @@
 import React from "react";
-import LoginPage from "./forms/LoginPage";
-import SignUpPage from "./forms/SignUpPage";
-import SearchBar from "./components/UI/SearchBar";
-import Newsletter from "./components/UI/Newsletter";
+import ProductCard from "./components/UI/productCard";
+import { products } from "./assets";
+import PriceTags from "./components/UI/PriceTags";
+import BigProductCard from "./components/UI/BigProductCard";
 
 const App = () => {
   return (
     <div className="container">
-      <SearchBar />
-      <Newsletter />
-      <LoginPage />
-      <SignUpPage />
+      <ProductCard
+        price={"99.99"}
+        title={"Green Apple"}
+        icon={products.greenApple}
+        rating={4.5}
+      />
+      <BigProductCard
+        price={"99.99"}
+        title={"Green Apple"}
+        icon={products.greenApple}
+        rating={4.5}
+      />
     </div>
   );
 };

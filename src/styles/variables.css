@@ -15,6 +15,9 @@
   --color-danger: #ea4b48;
   --color-danger-light: #fceaea;
   --color-success: #00ff00;
+  --color-info: #2388ff;
+
+  --border-color: #ccc;
 
   /* Grays */
   --color-gray-100: #f1f1f1;
