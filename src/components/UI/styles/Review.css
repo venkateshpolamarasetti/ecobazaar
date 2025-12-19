@@ -1,0 +1,36 @@
+.review {
+  display: flex;
+  align-items: center;
+}
+
+.review-stars {
+  position: relative;
+  display: inline-block;
+  line-height: 0; /* Removing extra vertical space */
+  font-size: 0; /* Removing extra gap between inline-block images if any */
+}
+
+.review-stars-bg {
+  display: flex;
+  filter: grayscale(100%) brightness(100%); /* Make sure it looks gray/silver */
+  opacity: 0.5;
+}
+
+.review-stars-fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.review-stars img,
+.review-stars-bg img,
+.review-stars-fg img {
+  width: 12px;
+  height: 12px;
+  margin-right: 1px;
+  display: block;
+}

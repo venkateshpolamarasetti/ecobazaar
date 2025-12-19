@@ -1,0 +1,34 @@
+.price-tag-container {
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.tag-title {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-white);
+}
+
+.price-tag-container.red {
+  background-color: var(--color-danger);
+}
+
+.price-tag-container.green {
+  background-color: var(--color-success);
+}
+
+.price-tag-container.orange {
+  background-color: var(--color-warning);
+}
+
+.price-tag-container.blue {
+  background-color: var(--color-info);
+}
+
+.price-tag-container.purple {
+  background-color: var(--color-primary);
+}
+
+.price-tag-container.black {
+  background-color: var(--color-black);
+}
